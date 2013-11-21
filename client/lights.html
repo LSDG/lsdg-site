@@ -34,9 +34,9 @@
             <div class="masthead">
                 <h1 class="text-muted"><img src="/images/lsdg-logo-2.png" width="100"> Lubbock Software Development Group</h1>
                 <div class="btn-group btn-group-justified btn-group-lg">
-                    <a class="btn btn-default active"><i class="fa fa-home"></i> Home</a>
+                    <a class="btn btn-default" href="/"><i class="fa fa-home"></i> Home</a>
                     <a class="btn btn-default" href="https://github.com/LSDG/"><i class="fa fa-github-square fa-lg"></i> Github</a>
-                    <a class="btn btn-default" href="/lights.html"><i class="fa fa-lightbulb-o fa-lg"></i> Christmas Lights</a>
+                    <a class="btn btn-default active"><i class="fa fa-lightbulb-o fa-lg"></i> Christmas Lights</a>
                     <a class="btn btn-default" href="https://twitter.com/lsdginfo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a>
                     <a class="btn btn-default" href="https://www.facebook.com/groups/378191042235127/"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a>
                     <a class="btn btn-default" href="http://goo.gl/maps/YOH7s"><i class="fa fa-map-marker fa-lg"></i> Location</a>
@@ -44,31 +44,24 @@
                 <br/>
             </div>
 
-            <!-- Jumbotron -->
-            <div class="jumbotron">
-                <h1>We develop software!</h1>
-                <p class="lead">That's right! As the name implies, we're a group of developers, in Lubbock TX, who get together once a month to share ideas, and technology. It's the first Thursday, of every month, @ 6:30pm <a href="http://goo.gl/maps/YOH7s">here</a>.</p>
-                <p><a class="btn btn-lg btn-success" href="https://www.facebook.com/groups/378191042235127/" role="button">Check us out!</a></p>
-            </div>
+            <ul class="well well-small pull-right info" style="margin-top: 20px;">
+                <li><b>Site:</b> <a href="http://lights.lsdg.org">http://lights.lsdg.org</a></li>
+                <li><b>Location:</b> <a href="http://goo.gl/maps/CiFav">Google Maps</a></li>
+            </ul>
+            <h2><i class="fa fa-lightbulb-o"></i> Christmas Light Show</h2>
 
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2><i class="fa fa-power-off"></i> Technology</h2>
-                    <p>We are huge fans of all technology. Everything from .Net to Node.js to Erlang, there's someone in the group who knows and loves it. We also believe in open-source, and all of our projects are available on Github. Feel free to browse and fork away.</p>
-                    <p><a class="btn btn-primary" href="#" role="button"><i class="fa fa-github"></i> LSDG Github &raquo;</a></p>
-                </div>
-                <div class="col-lg-4">
-                    <h2><i class="fa fa-lightbulb-o"></i> Christmas Lights</h2>
-                    <p>Every year, we put up a Christmas Lights show, using a Raspberry Pi arm computer, and a microcontroller. People can drive by, and watch the lights as they blink to music we broadcast over a small radio transmitter. The show is entirely free, and volunteer.</p>
-                    <p><a class="btn btn-primary" href="/lights.html" role="button"><i class="fa fa-eye"></i> View details &raquo;</a></p>
-                </div>
-                <div class="col-lg-4">
-                    <h2><i class="fa fa-bullhorn"></i> Community</h2>
-                    <p>The LSDG is all about building a community. We know there's great developers, living in Lubbock, writing some amazing things. LSDG is a way for us to find each other, connect, and collaborate. You don't have to be an amazing developer, either. We welcome everyone.</p>
-                    <p><a class="btn btn-primary" href="#" role="button"><i class="fa fa-facebook"></i> Facebook &raquo;</a></p>
-                </div>
-            </div>
+            <p>Every year, we get together to setup a christmas lights display at the Family Counseling Services center. The show is free; and done entirely as a volunteer effort. It's a great way for us to give back to the community, and do what we do best: <i>develop things.</i></p>
+
+            <h4>Not your Grandma's Christmas Lights</h4>
+            <p>You see, being the kind of people we are, we weren't happy with just putting up some pretty lights. Instead, we designed a system using <b>32</b> strings of lights, controlled by an <a href="http://arduino.cc/">Arduino micocontroller</a>, talking to a <a href="http://www.raspberrypi.org/">Raspberry Pi</a> arm computer, connecting over the internet to a website running <a href="http://nodejs.org/">node.js</a>, and transmitting sound over a radio transmitter.
+                The Raspberry Pi performs <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Analysis</a> on the songs, and figured out how to blink the lights to the music. You can connect to the website, request a couple of songs to hear next from the list of available songs. The site then sends that over the internet to the little Raspberry Pi, and it plays that song next.</p>
+
+            <h4>That sounds Crazy!</h4>
+            <p>I know!</p>
+
+            <h4>Why do all this?</h4>
+            <p>The most honest answer is, "because we can". But, really, it's a fun project that allows us to learn a lot about technologies we wouldn't otherwise use, it looks <i>awesome</i>, and it creates something unique. As far as we can tell, even those impressive lightshows you see on youtube don't do it this way. And every year, ours gets better and better.</p>
+            <p>So, why don't you come by and check it out? Once you see it, I'm sure you'll understand why we wanted to do something this cool.</p>
 
             <hr>
 
@@ -83,3 +76,4 @@
         <!-- Placed at the end of the document so the pages load faster -->
     </body>
 </html>
+
